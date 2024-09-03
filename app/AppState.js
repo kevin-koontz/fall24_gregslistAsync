@@ -1,6 +1,7 @@
 import { Car } from './models/Car.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
+import { House } from "./models/House.js"
 
 class ObservableAppState extends EventEmitter {
 
@@ -9,6 +10,10 @@ class ObservableAppState extends EventEmitter {
     // NOTE when the app loads, there are no cars
   ]
 
+  /** @type {House[]} */
+  houses = [
+    //NOTE - When the app loads, there are no houses
+  ]
 
 
   user = null
