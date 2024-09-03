@@ -1,5 +1,8 @@
+import { Profile } from "./Profile.js"
+
 export class House {
   constructor(data) {
+    this.id = data.id
     this.bedrooms = data.bedrooms
     this.bathrooms = data.bathrooms
     this.levels = data.levels
@@ -8,7 +11,8 @@ export class House {
     this.price = data.price
     this.description = data.description || "No description provided."
     this.creatorId = data.creatorId
-
+    this.createdAt = new Date(data.createdAt)
+    this.creator = new Profile(data.creator)
   }
 
 }
