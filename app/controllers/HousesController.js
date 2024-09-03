@@ -1,14 +1,15 @@
 import { AppState } from "../AppState.js";
-import { api } from "../services/AxiosService.js";
 import { housesService } from "../services/HousesService.js";
 import { Pop } from "../utils/Pop.js";
 import { setHTML } from "../utils/Writer.js";
-
+import { getFormData } from "../utils/FormHandler.js";
 
 export class HousesController {
   constructor() {
     console.log('🏠🎮');
+    AppState.on('houses', this.drawHouses)
 
+    this.getHouses()
 
   }
 
