@@ -5,14 +5,15 @@ export class House {
     this.id = data.id
     this.bedrooms = data.bedrooms
     this.bathrooms = data.bathrooms
-    this.levels = data.levels
+    this.levels = data.levels || "No levels provided."
     this.imgUrl = data.imgUrl
     this.year = data.year
     this.price = data.price
     this.description = data.description || "No description provided."
     this.creatorId = data.creatorId
-    this.createdAt = new Date(data.createdAt)
     this.creator = new Profile(data.creator)
+    this.createdAt = new Date(data.createdAt)
+    this.updatedAt = new Date(data.updatedAt)
   }
 
 }
