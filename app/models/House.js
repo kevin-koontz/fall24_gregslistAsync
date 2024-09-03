@@ -16,6 +16,31 @@ export class House {
     this.updatedAt = new Date(data.updatedAt)
   }
 
+  get cardHTMLTemplate() {
+    return `
+    <div class="col-md-12 p-0 mb-3">
+      <section class="row bg-dark shadow text-light house-border-LG">
+        <div class="col-md-4 p-0">
+          <img
+            src="${this.imgUrl}"
+            alt="${this.year} ${this.price}" class="img-fluid house-img">
+        </div>
+        <div class="col-md-8">
+          <div class="p-2">
+            <p>Year: ${this.year}</p>
+            <p>Levels: ${this.levels}</p>
+            <p>Bedrooms: ${this.bedrooms}</p>
+            <p>Bathrooms: ${this.bathrooms}</p>
+            <p>Price: ${this.price}</p>
+            <p>Description: ${this.description}</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    `
+  }
+
 }
 
 

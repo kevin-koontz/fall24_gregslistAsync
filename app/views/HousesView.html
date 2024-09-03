@@ -1,1 +1,76 @@
-Houses
+<div class="container">
+  <section class="row">
+    <div class="col-md-12 my-3">
+      <div class="text-center">
+        <h1>Houses</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-md-4">
+      <form onsubmit="">
+        <div class="mb-3">
+          <label for="year">Year:</label>
+          <input id="year" name="year" type="number" required min="1800" max="2024" placeholder="2024">
+        </div>
+        <div class="mb-3">
+          <label for="levels">Levels:</label>
+          <input id="levels" name="levels" type="number" required min="1" max="100" placeholder="2">
+        </div>
+        <div class="mb-3">
+          <label for="bedrooms">Bedrooms:</label>
+          <input id="bedrooms" name="bedrooms" type="number" required min="1" max="20" placeholder="4">
+        </div>
+        <div class="mb-3">
+          <label for="bathrooms">Bathrooms:</label>
+          <input id="bathrooms" name="bathrooms" type="number" required min="1" max="20" placeholder="3.5">
+        </div>
+        <div class="mb-3">
+          <label for="price">Price:</label>
+          <input id="price" name="price" type="number" required min="100000" max="10000000" placeholder="100000">
+        </div>
+        <div class="mb-3">
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" type="text" maxlength="5000"
+            placeholder="Description of house..."></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="imgUrl">House Image:</label>
+          <input id="imgUrl" name="imgUrl" type="url" maxlength="2000" placeholder="Image of house...">
+        </div>
+
+        <div class="my-2">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="houses-listing" class="row">
+    <!--     
+    <div class="col-md-12 p-0 mb-3">
+      <section class="row bg-dark shadow text-light house-border-LG">
+        <div class="col-md-4 p-0">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1670963964797-942df1804579?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c25vdyUyMGxvZGdlfGVufDB8fDB8fHww"
+            alt="house image" class="img-fluid house-img">
+        </div>
+        <div class="col-md-8">
+          <div class="p-2">
+            <p>Year: 1988</p>
+            <p>Levels: 2</p>
+            <p>Bedrooms: 5</p>
+            <p>Bathrooms: 4.5</p>
+            <p>Price: $100,000</p>
+            <p>Description: Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </section>
+
+    </div> 
+    -->
+  </section>
+
+
+</div>
