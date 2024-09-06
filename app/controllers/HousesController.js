@@ -4,6 +4,10 @@ import { Pop } from "../utils/Pop.js";
 import { setHTML } from "../utils/Writer.js";
 import { getFormData } from "../utils/FormHandler.js";
 
+
+
+//NOTE - Next step: createHouse based on user input => Update Sandbox with newly created houses.
+
 export class HousesController {
   constructor() {
     console.log('🏠🎮');
